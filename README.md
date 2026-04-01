@@ -23,13 +23,14 @@ Pythonで仮想通貨の自動売買Botのサンプルです。
 
 
 ## 本番との主な違い
-- 機能			本番							サンプル
-- 取引所			3社								1社(Bybit)
-- ユーザー		マルチユーザー + Vault暗号化	シングルユーザー、config.py にハードコード
-- DB				MySQL + NAMED LOCK				SQLite + threading.Lock (WAL モード)
-- シグナル受信	Telegram Bot (Telethon)			HTTP POST エンドポイント
-- DCA				多段階 + ショック検知			1段階、簡易版
-- タイミング予測	sklearn + Transformer			なし（即時発注）
+| 機能 | 本番 | サンプル |
+|------|------|----------|
+| 取引所 | 3社 | 1社（Bybit） |
+| ユーザー | マルチユーザー + Vault暗号化 | シングルユーザー、config.py にハードコード |
+| DB | MySQL + NAMED LOCK | SQLite + threading.Lock（WAL モード） |
+| シグナル受信 | Telegram Bot（Telethon） | HTTP POST エンドポイント |
+| DCA | 多段階 + ショック検知 | 1段階、簡易版 |
+| タイミング予測 | sklearn + Transformer | なし（即時発注） |
 
 ---
 
