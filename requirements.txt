@@ -1,0 +1,12 @@
+# ShiningWish Trading Bot Sample — dependencies
+# 依存ライブラリ
+
+# 取引所 API / Exchange API
+ccxt>=4.3.0
+
+# Web フレームワーク / Web framework
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+
+# Pydantic (FastAPI と共にインストールされる / installed with FastAPI)
+pydantic>=2.6.0
